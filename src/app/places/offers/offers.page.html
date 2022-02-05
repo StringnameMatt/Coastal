@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -10,23 +10,46 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
+</ion-header> -->
+<ion-header>
+  <ion-toolbar color="white">
+    <ion-buttons slot="start">
+      <ion-menu-button color="dark">
+        
+      </ion-menu-button>
+    </ion-buttons>
+    <div text-center class="mainlogo">
+      <ion-img class="logo" src="https://i.postimg.cc/FspN4R6D/CCALogo.jpg"></ion-img>
+    </div>
+    <!-- <ion-buttons slot="primary">
+      <ion-button [disabled]="true"  routerLink="/places/tabs/offers/new">
+        <ion-icon name="" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+  </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
+  
   <ion-grid>
     <ion-row>
       <ion-col size="12" size-sm="8" offset-sm="2">
+        
+        
         <ion-list>
+            <ion-text>Upcoming Events</ion-text>
+          <ion-item-divider></ion-item-divider>
+          
           <ion-item-sliding *ngFor="let offer of offers" #slidingItem>
             <app-offer-item [offer]="offer"></app-offer-item>
-            <ion-item-options side="end">
+            <!-- <ion-item-options side="end">
               <ion-item-option
-                color="secondary"
+                color="dark"
                 (click)="onEdit(offer.id, slidingItem)"
               >
                 <ion-icon name="create" slot="icon-only"></ion-icon>
               </ion-item-option>
-            </ion-item-options>
+            </ion-item-options> -->
           </ion-item-sliding>
         </ion-list>
       </ion-col>

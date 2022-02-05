@@ -56,20 +56,15 @@ export class PlaceDetailPage implements OnInit, OnDestroy {
     // this.navCtrl.pop();
     this.actionSheetCtrl
       .create({
-        header: 'Choose an Action',
+        header: 'Would you like to register for this camp?',
         buttons: [
           {
-            text: 'Select Date',
+            text: 'Yes',
             handler: () => {
               this.openBookingModal('select');
             }
           },
-          {
-            text: 'Random Date',
-            handler: () => {
-              this.openBookingModal('random');
-            }
-          },
+          
           {
             text: 'Cancel',
             role: 'cancel'

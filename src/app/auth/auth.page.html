@@ -1,10 +1,20 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>{{ isLogin ? 'Login' : 'Signup' }}</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-header>
+  <ion-toolbar color="white">
+    
+    <div text-center class="mainlogo">
+      <ion-img class="logo" src="https://i.postimg.cc/FspN4R6D/CCALogo.jpg"></ion-img>
+    </div>
+    
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
+  <ion-card>
   <form #f="ngForm" (ngSubmit)="onSubmit(f)">
     <ion-grid>
       <ion-row>
@@ -53,14 +63,14 @@
       </ion-row>
       <ion-row>
         <ion-col size-sm="6" offset-sm="3">
-          <ion-button 
+          <!-- <ion-button 
           type="button" 
           color="primary" 
           fill="clear" 
           expand="block"
           (click)="onSwitchAuthMode()">
             Switch to {{ isLogin ? 'Signup' : 'Login' }}
-          </ion-button>
+          </ion-button> -->
           <ion-button
             type="submit"
             color="primary"
@@ -78,4 +88,5 @@
   <!-- <div class="ion-text-center">
     <ion-spinner color="primary" *ngIf="isLoading"></ion-spinner>
   </div> -->
+</ion-card>
 </ion-content>

@@ -1,21 +1,67 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="white">
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-      <!-- <ion-button (click)="onOpenMenu()">
-        Open
-      </ion-button> -->
+      <ion-menu-button color="dark">
+      </ion-menu-button>
     </ion-buttons>
-    <ion-title>Discover Places</ion-title>
+        <div text-center class="mainlogo">
+          <ion-img class="logo" src="https://i.postimg.cc/FspN4R6D/CCALogo.jpg"></ion-img>
+        </div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-  <ion-segment (ionChange)="onFilterUpdate($event)" value="all">
+
+<ion-content>
+  <ion-card-content>
+    <ion-card>
+      <ion-grid>
+    <ion-row>
+    <ion-col size="12" size-sm="8" offset-sm="2">
+
+          <ion-img src="https://i.postimg.cc/FspN4R6D/CCALogo.jpg">
+          </ion-img>
+    </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  <ion-text>
+        <p class="paragraph">Coming Soon!!</p>
+      </ion-text>
+
+    </ion-card>
+  </ion-card-content>
+  
+
+   <ion-item-divider></ion-item-divider>
+
+
+      
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-content class="ion-padding">
+  <ion-item-divider></ion-item-divider>
+  <div class="ion-text-center">
+    <ion-text>Spotlight</ion-text>
+    
+  </div> -->
+  
+  <!-- <ion-segment (ionChange)="onFilterUpdate($event)" value="all">
     <ion-segment-button value="all">All Places</ion-segment-button>
     <ion-segment-button value="bookable">Bookable Places</ion-segment-button>
-  </ion-segment>
-  <ion-grid *ngIf="!relevantPlaces || relevantPlaces.length <= 0">
+  </ion-segment> -->
+  <!-- <ion-grid *ngIf="!relevantPlaces || relevantPlaces.length <= 0">
     <ion-row>
       <ion-col size="12" size-sm="8" offset-sm="2" class="ion-text-center">
         <p>There are no bookable places right now, please come back later!</p>
@@ -30,12 +76,13 @@
             <ion-card-title>{{ relevantPlaces[0].title }}</ion-card-title>
             <ion-card-subtitle
               >{{ relevantPlaces[0].price | currency }} /
-              Night</ion-card-subtitle
+              Athlete</ion-card-subtitle
             >
           </ion-card-header>
           <ion-img [src]="relevantPlaces[0].imageUrl"></ion-img>
           <ion-card-content>
             <p>{{ relevantPlaces[0].description }}</p>
+            
           </ion-card-content>
           <div>
             <ion-button
@@ -79,3 +126,4 @@
     </ion-row>
   </ion-grid>
 </ion-content>
+ -->

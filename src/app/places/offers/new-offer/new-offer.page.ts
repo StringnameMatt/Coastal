@@ -50,7 +50,7 @@ export class NewOfferPage implements OnInit {
     }
     this.loadingCtrl
       .create({
-        message: 'Creating place...'
+        message: 'Creating event...'
       })
       .then(loadingEl => {
         loadingEl.present();

@@ -1,9 +1,14 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="white">
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button color="dark">
+        
+      </ion-menu-button>
     </ion-buttons>
-    <ion-title>Your Bookings</ion-title>
+    <div text-center class="mainlogo">
+      <ion-img class="logo" src="https://i.postimg.cc/FspN4R6D/CCALogo.jpg"></ion-img>
+    </div>
+    
   </ion-toolbar>
 </ion-header>
 
@@ -16,7 +21,9 @@
         *ngIf="!loadedBookings || loadedBookings.length <= 0"
         class="ion-text-center"
       >
-        <p>No bookings found!</p>
+        <p>No registered events found!</p>
+        <p>Click below to find some.</p>
+        <ion-button class="nav-item nav-link-edit" [routerLink]="['/', 'places', 'tabs', 'offers']">View Events</ion-button>
       </ion-col>
       <ion-col
         size-md="6"

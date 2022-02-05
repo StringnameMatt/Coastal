@@ -12,34 +12,25 @@ export class PlacesService {
   private _places = new BehaviorSubject<Place[]>([
     new Place(
       'p1',
-      'Manhattan Mansion',
-      'In the heart of New York City.',
-      'https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=1200',
-      149.99,
+      'Winter Camp',
+      'A cheer camp in winter!',
+      'https://scontent.fhio2-1.fna.fbcdn.net/v/t39.30808-6/244686754_4345674442216993_2308884096816042397_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=115BgO9ytkUAX9H0qCK&_nc_ht=scontent.fhio2-1.fna&oh=00_AT-0CZBpk9x5_DB9QvabqZaclJ90ItKRPijF7-MULihP2w&oe=6202CE26',
+      200,
       new Date('2019-01-01'),
       new Date('2019-12-31'),
       'abc'
     ),
     new Place(
       'p2',
-      "L'Amour Toujours",
-      'A romantic place in Paris!',
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Paris_Night.jpg/1024px-Paris_Night.jpg',
-      189.99,
+      "Summer Camp",
+      'A cheer camp in summer!',
+      'https://scontent.fhio2-2.fna.fbcdn.net/v/t39.30808-6/272514663_4716248198492947_822925554157678348_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=OTLsNJ872SkAX_poj4z&_nc_ht=scontent.fhio2-2.fna&oh=00_AT8BB3A-WJ1ddI2wajZSLL5HIuJkpkAYPHjqaNFPrNwe-Q&oe=62038BF8',
+      250,
       new Date('2019-01-01'),
       new Date('2019-12-31'),
       'abc'
     ),
-    new Place(
-      'p3',
-      'The Foggy Palace',
-      'Not your average city trip!',
-      'https://upload.wikimedia.org/wikipedia/commons/0/01/San_Francisco_with_two_bridges_and_the_fog.jpg',
-      99.99,
-      new Date('2019-01-01'),
-      new Date('2019-12-31'),
-      'abc'
-    )
+   
   ]);
 
   get places() {
