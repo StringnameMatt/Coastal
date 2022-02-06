@@ -1,9 +1,9 @@
 <ion-app>
   <ion-menu side="start">
     <ion-header>
-      <ion-toolbar color="white">
+      <ion-toolbar color="dark">
         <ion-thumbnail>
-          <ion-img class="logo" src="https://i.postimg.cc/FspN4R6D/CCALogo.jpg"></ion-img>
+          <ion-img  class="logo" src="https://i.postimg.cc/FspN4R6D/CCALogo.jpg"></ion-img>
         </ion-thumbnail>
           
         
@@ -14,20 +14,20 @@
       <ion-list>
         <ion-menu-toggle>
           <ion-item lines="none" routerLink="/places/tabs/discover">
-            <ion-icon name="home-outline" slot="start"></ion-icon>
-            <ion-label>Home</ion-label>
+            <ion-icon name="home-outline" color="primary" slot="start"></ion-icon>
+            <ion-label color="primary">Home</ion-label>
           </ion-item>
         </ion-menu-toggle>
         <ion-menu-toggle>
           <ion-item [disabled]="true" lines="none" routerLink="/bookings">
-            <ion-icon name="calendar-number-outline" slot="start"></ion-icon>
-            <ion-label>My Events</ion-label>
+            <ion-icon color="primary" name="calendar-number-outline" slot="start"></ion-icon>
+            <ion-label color="primary">My Events</ion-label>
           </ion-item>
         </ion-menu-toggle>
         <ion-menu-toggle>
           <ion-item [disabled]="true" lines="none" (click)="onLogout()" button>
-            <ion-icon name="exit" slot="start"></ion-icon>
-            <ion-label>Logout</ion-label>
+            <ion-icon color="primary" name="exit" slot="start"></ion-icon>
+            <ion-label color="primary">Logout</ion-label>
           </ion-item>
         </ion-menu-toggle>
       </ion-list>

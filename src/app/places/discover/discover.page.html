@@ -1,7 +1,7 @@
 <ion-header>
-  <ion-toolbar style="height: 70px;" color="white">
+  <ion-toolbar color="dark" style="height: 60px;">
     <ion-buttons slot="start">
-      <ion-menu-button color="dark">
+      <ion-menu-button color="primary">
       </ion-menu-button>
     </ion-buttons>
         <div text-center class="mainlogo">
@@ -30,14 +30,15 @@
     <ion-row>
       <ion-col size-sm="6" offset-sm="3">
         <ion-card-content>
-          <ion-card>
-            <ion-toolbar class="ion-text-center"><ion-text>Subscribe</ion-text></ion-toolbar>
-            <ion-item color="light">
-              <ion-label position="floating">Email</ion-label>
+          <ion-card >
+            <ion-toolbar color="primary" class="ion-text-center"><ion-text color="dark">Subscribe</ion-text></ion-toolbar>
+            <ion-item color="red">
+              <ion-label color="primary" position="floating">Email</ion-label>
               <ion-input type="email" 
                          ngModel 
                          name="email" 
                          email
+                         color="primary"
                          
               ></ion-input>
             </ion-item>
