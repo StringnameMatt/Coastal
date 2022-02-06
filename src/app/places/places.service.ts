@@ -16,8 +16,8 @@ export class PlacesService {
       'A cheer camp in winter!',
       'https://scontent.fhio2-1.fna.fbcdn.net/v/t39.30808-6/244686754_4345674442216993_2308884096816042397_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=115BgO9ytkUAX9H0qCK&_nc_ht=scontent.fhio2-1.fna&oh=00_AT-0CZBpk9x5_DB9QvabqZaclJ90ItKRPijF7-MULihP2w&oe=6202CE26',
       200,
-      new Date('2019-01-01'),
-      new Date('2019-12-31'),
+      new Date('2022-02-15'),
+      new Date('2022-02-17'),
       'abc'
     ),
     new Place(
@@ -26,8 +26,8 @@ export class PlacesService {
       'A cheer camp in summer!',
       'https://scontent.fhio2-2.fna.fbcdn.net/v/t39.30808-6/272514663_4716248198492947_822925554157678348_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=OTLsNJ872SkAX_poj4z&_nc_ht=scontent.fhio2-2.fna&oh=00_AT8BB3A-WJ1ddI2wajZSLL5HIuJkpkAYPHjqaNFPrNwe-Q&oe=62038BF8',
       250,
-      new Date('2019-01-01'),
-      new Date('2019-12-31'),
+      new Date('2022-02-25'),
+      new Date('2022-02-27'),
       'abc'
     ),
    

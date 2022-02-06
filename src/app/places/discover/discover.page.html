@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="white">
+  <ion-toolbar style="height: 70px;" color="white">
     <ion-buttons slot="start">
       <ion-menu-button color="dark">
       </ion-menu-button>
@@ -12,29 +12,51 @@
 
 
 <ion-content>
-  <ion-card-content>
-    <ion-card>
-      <ion-grid>
+  <ion-grid>
     <ion-row>
-    <ion-col size="12" size-sm="8" offset-sm="2">
-
-          <ion-img src="https://i.postimg.cc/FspN4R6D/CCALogo.jpg">
-          </ion-img>
-    </ion-col>
-
+      <ion-col size-sm="6" offset-sm="3">
+        <ion-card-content class="ion-text-center">
+          <ion-card>
+              <ion-img class="ion-padding" src="https://i.postimg.cc/FspN4R6D/CCALogo.jpg"></ion-img>&nbsp;
+              <p class="ion-padding">We're a non-profit that is looking to bring a new fun and exciting youth cheerleading program to Lincoln City! We're in the early stages of this process, but during that time if you'd like to keep updated on what's to come, please subscribe below!</p> 
+              <ion-img style="top: 50%; margin: 0 auto; width: 30%;" class="ion-padding" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fvectors%2Fcheerleading-icon-vector-id466596852%3Fk%3D6%26m%3D466596852%26s%3D612x612%26w%3D0%26h%3DT2VPuFz3L0MgxIAxuP6EdTmy-Sm-OifHpbvvUvTg1FM%3D&f=1&nofb=1"></ion-img>  
+          </ion-card>
+        </ion-card-content>
+      </ion-col> 
     </ion-row>
   </ion-grid>
-  <ion-text>
-        <p class="paragraph">Coming Soon!!</p>
-      </ion-text>
 
-    </ion-card>
-  </ion-card-content>
-  
-
-   <ion-item-divider></ion-item-divider>
-
-
+  <ion-grid>
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3">
+        <ion-card-content>
+          <ion-card>
+            <ion-toolbar class="ion-text-center"><ion-text>Subscribe</ion-text></ion-toolbar>
+            <ion-item color="light">
+              <ion-label position="floating">Email</ion-label>
+              <ion-input type="email" 
+                         ngModel 
+                         name="email" 
+                         email
+                         
+              ></ion-input>
+            </ion-item>
+          
+            <div class="ion-text-center">
+            <ion-button 
+              type="submit" 
+              color="primary" 
+              
+              >
+              
+            Subscribe
+            </ion-button>
+            </div>   
+          </ion-card>
+        </ion-card-content>
+      </ion-col> 
+    </ion-row>
+  </ion-grid>
       
 
 </ion-content>

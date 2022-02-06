@@ -8,9 +8,13 @@
       <ion-label>Home</ion-label>
       <ion-icon name="home-outline"></ion-icon>
     </ion-tab-button>
-    <ion-tab-button tab="offers">
+    <ion-tab-button [disabled]="true" tab="offers">
       <ion-label>Events</ion-label>
       <ion-icon name="calendar-number-outline"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button [disabled]="true" tab="chat">
+      <ion-label>Chat</ion-label>
+      <ion-icon name="chatbox-outline"></ion-icon>
     </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>
