@@ -1,12 +1,18 @@
 <ion-header>
-  <ion-toolbar color="white" style="height: 60px;">
+  <ion-toolbar color="white" >
     <ion-buttons slot="start">
       <ion-menu-button color="primary">
       </ion-menu-button>
     </ion-buttons>
-        <div text-center class="mainlogo">
-          <ion-img class="logo" src="https://i.postimg.cc/FspN4R6D/CCALogo.jpg"></ion-img>
-        </div>
+   
+          <div text-center class="mainlogo">
+            <ion-img class="logo" src="https://i.postimg.cc/FspN4R6D/CCALogo.jpg"></ion-img>
+          </div>
+        
+          <ion-buttons slot="end">
+            <ion-menu-button class="dummy" [disabled]="true">
+            </ion-menu-button>
+          </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -15,14 +21,18 @@
   <ion-grid>
     <ion-row>
       <ion-col size-sm="6" offset-sm="3">
+        <div class="cards">
+
+        
         <ion-card-content class="ion-text-center">
           <ion-card>
-              <p  class="quote">"The coach can make you practice. The crowd can cheer you on. But only the desire for success can make you a champion"</p>&nbsp;
+              <p  class="quote">"The coach can make you practice. The crowd can cheer you on. But only the desire for success can make you a champion."</p>&nbsp;
               <ion-img style="top: 50%; margin: 0 auto; width: 30%;" class="ion-padding" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fvectors%2Fcheerleading-icon-vector-id466596852%3Fk%3D6%26m%3D466596852%26s%3D612x612%26w%3D0%26h%3DT2VPuFz3L0MgxIAxuP6EdTmy-Sm-OifHpbvvUvTg1FM%3D&f=1&nofb=1"></ion-img>
               <p class="ion-padding" style="font-size: 17px;">We're a non-profit that is looking to bring a new, fun and exciting youth cheerleading program to Lincoln City! We're in the early stages of this process, but during that time if you'd like to keep updated on what's to come, please subscribe below!</p> 
                 
           </ion-card>
         </ion-card-content>
+        </div>
       </ion-col> 
     </ion-row>
   </ion-grid>

@@ -21,6 +21,10 @@
     <div text-center class="mainlogo">
       <ion-img class="logo" src="https://i.postimg.cc/FspN4R6D/CCALogo.jpg"></ion-img>
     </div>
+    <ion-buttons slot="end">
+      <ion-menu-button class="dummy" [disabled]="true">
+      </ion-menu-button>
+    </ion-buttons>
     <!-- <ion-buttons slot="primary">
       <ion-button [disabled]="true"  routerLink="/places/tabs/offers/new">
         <ion-icon name="" slot="icon-only"></ion-icon>
@@ -37,8 +41,11 @@
         
         
         <ion-list>
-            <ion-text>Upcoming Events</ion-text>
-          <ion-item-divider></ion-item-divider>
+          <div class="eventtext">
+            <ion-text >Upcoming Events</ion-text>
+          </div>
+            
+          
           
           <ion-item-sliding *ngFor="let offer of offers" #slidingItem>
             <app-offer-item [offer]="offer"></app-offer-item>

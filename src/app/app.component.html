@@ -10,12 +10,18 @@
       </ion-toolbar>
     </ion-header>
 
-    <ion-content>
+    <ion-content class="override">
       <ion-list>
         <ion-menu-toggle>
           <ion-item lines="none" routerLink="/places/tabs/discover">
             <ion-icon name="home-outline" color="primary" slot="start"></ion-icon>
             <ion-label color="primary">Home</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item [disabled]="true" lines="none" routerLink="/places/tabs/offers">
+            <ion-icon name="ribbon-outline" color="primary" slot="start"></ion-icon>
+            <ion-label color="primary">Events</ion-label>
           </ion-item>
         </ion-menu-toggle>
         <ion-menu-toggle>

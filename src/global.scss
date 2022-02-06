@@ -18,16 +18,18 @@
     color: var(--ion-color-danger);
 }
 
-.logo {
-    height: 5vh;
-    width: 13vh;
-    margin: auto;
-    display: block;
-}
 
 .mainlogo {
-    padding-right: 11%;
+    
+    height: 8vh;
+    width: 10vh;
+    margin: auto;
+    display:flex;
+    
 }
+.dummy {
+    color: white;
+  }
 
 ion-card {
     background-color: white;
@@ -40,8 +42,16 @@ ion-toolbar {
 ion-content {
     --background: none;
     background-image: url('/assets/img/coastal-cheer.jpg');
-    background-position: center center;
+    background-position:top;
     background-repeat: no-repeat;
     background-size:cover;
-    overflow: hidden;
+    overflow:hidden;
+    background-blend-mode: color;
+    
+}
+
+.override {
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
