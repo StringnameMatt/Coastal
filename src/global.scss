@@ -15,7 +15,7 @@
 }
 
 .logo {
-    height: 6vh;
+    height: 5vh;
     width: 13vh;
     margin: auto;
     display: block;
@@ -31,4 +31,13 @@ ion-card {
 
 ion-toolbar {
     background-color: white;
+}
+
+ion-content {
+    --background: none;
+    background-image: url('/assets/img/coastal-cheer.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
 }
