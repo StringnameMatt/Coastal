@@ -27,4 +27,19 @@ font-family: 'Yellowtail', cursive;
     margin: auto;
     display:flex;
     width:max-content;
+    
+    
+}
+
+.subcard {
+  box-shadow: 2px 4px 3px gray;
+  border-style:solid;
+}
+
+.quotecard {
+  border-radius: 50px;
+  border-style:solid;
+  box-shadow: 2px 4px 3px gray;
+  
+  
 }
