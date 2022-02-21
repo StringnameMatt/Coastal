@@ -14,7 +14,7 @@
   height:fit-content;
     margin: auto;
     display:flex;
-    width:auto;
+    width:90%;
     border: 2px 2px black;
 }
 
@@ -25,6 +25,14 @@ font-family: 'Yellowtail', cursive;
   font-size: 19px;
   padding: 15px;
   text-align: center;
+}
+
+.social {
+  height:fit-content;
+    margin: auto;
+    display:flex;
+    width:max-content;
+    border: 2px 2px black;
 }
 
 .subscribe {

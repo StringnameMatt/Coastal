@@ -22,9 +22,10 @@
 .mainlogo {
     
     height: 8vh;
-    width: 10vh;
+    width: 14vh;
     margin: auto;
     display:flex;
+    
     
 }
 .dummy {
@@ -42,7 +43,7 @@ ion-toolbar {
 
 ion-content {
     --background: none;
-   // background-image: url('/assets/imgs/back2.jpg');
+    background-image: url('/assets/imgs/backgroundSide.jpg');
     background-position:top;
     background-repeat: no-repeat;
     background-size:cover;
