@@ -1,18 +1,12 @@
-<div class="borderBottom" *ngIf="bannerImages.length > 0">
+<div *ngIf="bannerImages.length > 0">
   <ion-slides pager="true" [options]="slideOptions">
     <!-- *ngFor="let image of bannerImages" -->
     <ion-slide >
-      <ion-img [src]="model?.restaurant?.cover ? model.restaurant.cover : 'assets/imgs/4.jpg'"></ion-img>
+      <ion-img [src]="model?.restaurant?.cover ? model.restaurant.cover : 'assets/imgs/group.jpg'"></ion-img>
       <!-- <div [ngStyle]="{'background-image':'url(' + image.banner + ')'}"></div> -->
     </ion-slide>
     <ion-slide >
-      <ion-img [src]="model?.restaurant?.cover ? model.restaurant.cover : 'assets/imgs/2.jpg'"></ion-img>
-    </ion-slide>
-    <ion-slide >
-      <ion-img [src]="model?.restaurant?.cover ? model.restaurant.cover : 'assets/imgs/3.jpg'"></ion-img>
-    </ion-slide>
-    <ion-slide >
-      <ion-img [src]="model?.restaurant?.cover ? model.restaurant.cover : 'assets/imgs/1.jpg'"></ion-img>
+      <ion-img [src]="model?.restaurant?.cover ? model.restaurant.cover : 'assets/imgs/addy.jpg'"></ion-img>
     </ion-slide>
   </ion-slides>
 </div>
