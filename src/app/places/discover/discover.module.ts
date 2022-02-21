@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { DiscoverPage } from './discover.page';
+import { BannerComponent } from '../../components/banner/banner/banner.component';
+import { ApiService } from '../../services/api/api.service';
 
 const routes: Routes = [
   {
@@ -19,8 +21,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    
   ],
-  declarations: [DiscoverPage]
+  declarations: [DiscoverPage, BannerComponent, ]
 })
 export class DiscoverPageModule {}
