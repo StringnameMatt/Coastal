@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n\n\n\n<ion-tabs>\n  <ion-tab-bar slot=\"bottom\">\n    <ion-tab-button tab=\"discover\">\n      <ion-label>Home</ion-label>\n      <ion-icon name=\"home-outline\"></ion-icon>\n    </ion-tab-button>\n    <ion-tab-button [disabled]=\"true\" tab=\"offers\">\n      <ion-label>Events</ion-label>\n      <ion-icon name=\"calendar-number-outline\"></ion-icon>\n    </ion-tab-button>\n    <ion-tab-button [disabled]=\"true\" tab=\"chat\">\n      <ion-label>Chat</ion-label>\n      <ion-icon name=\"chatbox-outline\"></ion-icon>\n    </ion-tab-button>\n  </ion-tab-bar>\n</ion-tabs>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n\n\n\n<ion-tabs>\n  <ion-tab-bar slot=\"bottom\">\n    <ion-tab-button tab=\"discover\">\n      <ion-label>Home</ion-label>\n      <ion-icon name=\"home-outline\"></ion-icon>\n    </ion-tab-button>\n    <ion-tab-button [disabled]=\"true\" tab=\"offers\">\n      <ion-label>Events</ion-label>\n      <ion-icon name=\"ribbon-outline\"></ion-icon>\n    </ion-tab-button>\n    <ion-tab-button [disabled]=\"true\" tab=\"chat\">\n      <ion-label>Chat</ion-label>\n      <ion-icon name=\"chatbox-outline\"></ion-icon>\n    </ion-tab-button>\n  </ion-tab-bar>\n</ion-tabs>\n");
 
 /***/ }),
 

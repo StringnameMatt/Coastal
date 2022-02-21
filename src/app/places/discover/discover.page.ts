@@ -6,6 +6,7 @@ import { Subscription } from 'rxjs';
 import { PlacesService } from '../places.service';
 import { Place } from '../place.model';
 import { AuthService } from '../../auth/auth.service';
+import { ApiService } from '../../services/api/api.service';
 
 @Component({
   selector: 'app-discover',
@@ -13,6 +14,7 @@ import { AuthService } from '../../auth/auth.service';
   styleUrls: ['./discover.page.scss']
 })
 export class DiscoverPage implements OnInit, OnDestroy {
+  banners: any[] = [];
   loadedPlaces: Place[];
   listedLoadedPlaces: Place[];
   relevantPlaces: Place[];
@@ -21,15 +23,17 @@ export class DiscoverPage implements OnInit, OnDestroy {
   constructor(
     private placesService: PlacesService,
     private menuCtrl: MenuController,
-    private authService: AuthService
+    private authService: AuthService,
+    private api: ApiService
   ) {}
 
   ngOnInit() {
-    this.placesSub = this.placesService.places.subscribe(places => {
+    this.banners = this.api.banners;
+    /* this.placesSub = this.placesService.places.subscribe(places => {
       this.loadedPlaces = places;
       this.relevantPlaces = this.loadedPlaces;
       this.listedLoadedPlaces = this.relevantPlaces.slice(1);
-    });
+    }); */
   }
 
   onOpenMenu() {
