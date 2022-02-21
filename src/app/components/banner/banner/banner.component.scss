@@ -1,15 +1,15 @@
 ion-slides {
   --bullet-background: rgb(194, 250, 250);
-  height: 55vh;
+  height: 25vh;
   ion-slide {
-      img {
-          height: 20vh;
-          width: 94%;
+      ion-img {
+          height: 28vh;
+          width: 100%;
           margin: auto;
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
-          border-radius: 5px;
+          
       }
     }
 }

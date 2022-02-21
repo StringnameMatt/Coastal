@@ -1,5 +1,5 @@
 .paragraph {
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Times New Roman', Times, serif;
   text-align: center;
 }
 
@@ -11,6 +11,11 @@
 
 .cards {
   align-content: center;
+  height:fit-content;
+    margin: auto;
+    display:flex;
+    width:auto;
+    border: 2px 2px black;
 }
 
 .quote {
@@ -40,9 +45,9 @@ font-family: 'Yellowtail', cursive;
 }
 
 .quotecard {
-  border-radius: 50px;
+  border-radius: 10px;
   //border-style:solid;
- box-shadow: 1px 2px 2px gray;
+ //box-shadow: 1px 2px 2px gray;
   
   
 }
@@ -50,3 +55,4 @@ font-family: 'Yellowtail', cursive;
 p {
   text-align: center;
 }
+
