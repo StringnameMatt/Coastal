@@ -7,6 +7,8 @@ import { PlacesService } from '../places.service';
 import { Place } from '../place.model';
 import { AuthService } from '../../auth/auth.service';
 import { ApiService } from '../../services/api/api.service';
+import { Share } from '@capacitor/core';
+
 
 @Component({
   selector: 'app-discover',
