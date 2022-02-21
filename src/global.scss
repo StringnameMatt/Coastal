@@ -42,16 +42,17 @@ ion-toolbar {
 
 ion-content {
     --background: none;
-    background-image: url('/assets/imgs/back2.jpg');
+   // background-image: url('/assets/imgs/back2.jpg');
     background-position:top;
     background-repeat: no-repeat;
     background-size:cover;
-    overflow:hidden;
+    //overflow:hidden;
     background-blend-mode: color;
     
 }
 
 .override {
+    background-image: url('/assets/imgs/coastal-cheer.jpg');
     background-position:bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -60,3 +61,4 @@ ion-content {
 .borderBottom {
     border-bottom: .8vh solid var(--ion-color-light);
 }
+
