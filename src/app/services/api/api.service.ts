@@ -6,10 +6,8 @@ import { Injectable } from '@angular/core';
 export class ApiService {
 
   banners = [
-    {banners: 'assets/imgs/1.jpg'},
-    {banners: 'assets/imgs/2.jpg'},
-    {banners: 'assets/imgs/3.jpg'},
-    {banners: 'assets/imgs/4.jpg'}
+    {banners: 'assets/imgs/addy.jpg'},
+    {banners: 'assets/imgs/group.jpg'},
   ];
 
   constructor() { }
